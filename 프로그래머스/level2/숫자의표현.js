@@ -15,6 +15,5 @@ function solution(n) {
     if (2 * i + 1 > n) break;
     if (combination(i, n)) answer++;
   }
-
   return answer + 1;
 }
