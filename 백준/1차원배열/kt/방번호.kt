@@ -8,18 +8,19 @@ fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
     val card = br.readLine().map { it.digitToInt() }
 
-    val cards: MutableMap<Int, Int> = mutableMapOf(
-        0 to 0,
-        1 to 0,
-        2 to 0,
-        3 to 0,
-        4 to 0,
-        5 to 0,
-        6 to 0,
-        7 to 0,
-        8 to 0,
-        9 to 0
-    )
+    val cards: MutableMap<Int, Int> =
+        mutableMapOf(
+            0 to 0,
+            1 to 0,
+            2 to 0,
+            3 to 0,
+            4 to 0,
+            5 to 0,
+            6 to 0,
+            7 to 0,
+            8 to 0,
+            9 to 0,
+        )
 
     card.forEach { cards[it]?.let { count -> cards[it] = count + 1 } }
 
