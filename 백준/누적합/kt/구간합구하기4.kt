@@ -11,6 +11,7 @@ fun main() {
     val (n, m) = br.readLine().split(" ").map { it.toInt() }
     val result = mutableListOf<Int>()
     // 누적합
+    // sumlist[j] - sumlist[i - 1]
     br.readLine().split(" ").map {
         val num = it.toInt()
         sumList.add(sumList.last() + num)
